@@ -1,13 +1,12 @@
 language: java
-jdk
--
-openjdk11
-addons
-sonarcloud
-organization: "giulioc"
+jdk:
+- openjdk11
+addons:
+
+sonarcloud :
+organization: "giuliocapo"
 token: "2b6d1f009db0f4ac96a5e881b63318b7860d0f56"
+
 script:
--
-ant build
--
-sonar scanner
+-ant build
+-sonar scanner
