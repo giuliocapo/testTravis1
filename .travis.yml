@@ -1,3 +1,13 @@
 language: java
-jdk: -openjdk11 
-script: ant build
+jdk
+-
+openjdk11
+addons
+sonarcloud
+organization: "giulioc"
+token: "2b6d1f009db0f4ac96a5e881b63318b7860d0f56"
+script:
+-
+ant build
+-
+sonar scanner
